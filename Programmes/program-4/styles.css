@@ -195,6 +195,19 @@ body{
         border-radius: 5px;
     }
     .navlist{
+        position: absolute;
+        top: 100%;
+        left: 40%;
+        width: 200px;
+        height: 30vh;
+        background-color: #3e3e4c;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        padding: 20px 20px;
+        border-radius: 5px;
+        transition: all .55s ease;
         display: none;
     }
     .navlist li{

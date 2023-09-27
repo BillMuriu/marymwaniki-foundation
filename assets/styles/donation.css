@@ -34,7 +34,6 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 33px 9%;
     background-color: #fff;
     /* backdrop-filter: blur(20px); */
 }
@@ -53,6 +52,11 @@ body{
     background-color: black;
     border-radius: 50%;
     border: 1px solid rgb(255, 255, 255);
+}
+
+.logo h3 {
+    font-size: 14px;
+    color: #000;
 }
 .navlist{
     display: flex;
@@ -79,7 +83,7 @@ body{
 }
 
 #menu-icon {
-    color: white;
+    color: #000;
     font-size: 35px;
     z-index: 10001;
     cursor: pointer;
@@ -130,6 +134,9 @@ body{
     border: 2px solid rgba(255,255,255,0.1);
     box-shadow: 0 0 40px rgba(8,7,16,0.6);
     padding: 50px 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .main-section form *{
@@ -468,13 +475,6 @@ textarea{
         display: block;
     }
 
-
-    .main-container .main-header{
-        padding: 33px 30% 33px 9%;
-    }
-    .slider{
-        width: 600px;
-    }
     .about{
         display: flex;
         flex-direction: column;
@@ -528,7 +528,7 @@ textarea{
         width: 600px;
     }
     .main-container .main-header{
-        padding: 33px 20% 33px 9%;
+        padding: 0 15px;
     }
 
     .navlist a {
