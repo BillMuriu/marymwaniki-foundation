@@ -31,13 +31,14 @@ body{
     align-items: center;
     justify-content: space-between;
     padding: 33px 9%;
-    background: transparent;
-    backdrop-filter: blur(20px);
+    background-color: #fff;
 }
+
 
 .logo {
     font-size: 30px;
     font-weight: 700;
+    gap: 7px;
     color: white;
     display: flex;
     align-items: center;
@@ -49,6 +50,10 @@ body{
     background-color: black;
     border-radius: 50%;
     border: 1px solid rgb(255, 255, 255);
+}
+.logo h3 {
+    font-size: 14px;
+    color: #000;
 }
 .navlist{
     display: flex;
@@ -68,7 +73,7 @@ body{
 }
 
 #menu-icon {
-    color: white;
+    color: black;
     font-size: 35px;
     z-index: 10001;
     cursor: pointer;
@@ -111,6 +116,15 @@ body{
   .gallery-item p {
     margin: 0;
     padding: 8px;
+  }
+
+  .other-photos {
+    margin-bottom: 20px;
+  }
+
+  .other-photos a {
+    font-weight: bold;
+    text-decoration: underline;
   }
   
   @media screen and (max-width: 500px) {

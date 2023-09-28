@@ -8,16 +8,20 @@
 }
 
 body{
+    padding: 0;
+    margin: 0;
     background-color: #fdfdff;
     display: flex;
     justify-content: center;
 }
+
 
 .main-container{
     display: flex;
     flex-direction: column;
     padding: 0;
     align-items: center;
+    width: 100%;
 }
 
 .main-container .main-header{
@@ -26,7 +30,7 @@ body{
     top: 0;
     z-index: 1000;
     width: 100%;
-    height: 50px;
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -43,11 +47,18 @@ body{
     justify-self: center;
 }
 .logo img{
-    height: 60px;
-    width: 60px;
+    height: 50px;
+    width: 50px;
     background-color: black;
     border-radius: 50%;
-    border: 1px solid rgb(255, 255, 255);
+    border: 1px solid rgb(0, 0, 0);
+    margin-right: 5px;
+}
+.logo h3{
+    color: #242625;
+    font-size: 14px;
+    font-weight: 700;
+    margin-right: 10px;
 }
 .navlist{
     display: flex;
@@ -78,7 +89,7 @@ iframe {
 }
 
 #menu-icon {
-    color: white;
+    color: #000;
     font-size: 35px;
     z-index: 10001;
     cursor: pointer;
@@ -92,7 +103,7 @@ iframe {
     justify-content: space-around;
     margin-top: 70px;
     padding: 20px;
-    width: 87%;
+    width: 1005;
 }
 
 .about img{
@@ -211,7 +222,7 @@ iframe {
     .navlist{
         position: absolute;
         top: 100%;
-        right: 0;
+        right: 15%;
         width: 200px;
         height: 30vh;
         background-color: #3e3e4c;
@@ -234,20 +245,17 @@ iframe {
         display: block;
     }
 
+    .navlist.open a{
+        color: #fff;
+    }
 
-    .main-container .main-header{
-        padding: 33px 30% 33px 9%;
-    }
-    .slider{
-        width: 600px;
-    }
+
     .about{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 80%;
-        margin-right: 10px;
+        width: 100%;
     }
     .about .story{
         height: 400px;
@@ -300,6 +308,12 @@ iframe {
         width: 600px;
     }
 
+    #image-1{
+        width: 320px;
+    }
+    #image-2{
+        margin: 20px;
+    }
     .quote {
         background-color: rgba(255, 255, 255, 0.2);
         backdrop-filter: blur(100px);
